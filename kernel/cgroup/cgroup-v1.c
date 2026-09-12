@@ -20,6 +20,9 @@
 
 #include <trace/events/cgroup.h>
 #include <trace/hooks/cgroup.h>
+#ifdef CONFIG_KPROFILES
+extern int kp_active_mode(void);
+#endif
 
 /*
  * pidlists linger the following amount before being destroyed.  The goal

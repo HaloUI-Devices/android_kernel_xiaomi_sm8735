@@ -42,6 +42,9 @@
 #include <linux/proc_fs.h>
 #include <linux/rcupdate.h>
 #include <linux/sched.h>
+#ifdef CONFIG_KPROFILES
+extern int kp_active_mode(void);
+#endif
 #include <linux/sched/task.h>
 #include <linux/slab.h>
 #include <linux/spinlock.h>
